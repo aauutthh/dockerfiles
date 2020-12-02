@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CRT	openresty/pki/tls/certs/Makefile	/^CRT=$(TLSROOT)\/certs\/localhost.crt$/;"	m
+CSR	openresty/pki/tls/certs/Makefile	/^CSR=$(TLSROOT)\/certs\/localhost.csr$/;"	m
+DAYS	openresty/pki/tls/certs/Makefile	/^DAYS=365$/;"	m
+EXTRA_FLAGS	openresty/pki/tls/certs/Makefile	/^EXTRA_FLAGS=$/;"	m
+KEY	openresty/pki/tls/certs/Makefile	/^KEY=$(TLSROOT)\/private\/localhost.key$/;"	m
+KEYLEN	openresty/pki/tls/certs/Makefile	/^KEYLEN=2048$/;"	m
+TLSROOT	openresty/pki/tls/certs/Makefile	/^TLSROOT=\/etc\/pki\/tls$/;"	m
+TYPE	openresty/pki/tls/certs/Makefile	/^TYPE=rsa:$(KEYLEN)$/;"	m
+UTF8	openresty/pki/tls/certs/Makefile	/^UTF8 := $(shell locale -c LC_CTYPE -k | grep -q charmap.*UTF-8 && echo -utf8)$/;"	m
+build_and_test	helloworld/build.sh	/^build_and_test()$/;"	f
+build_and_test	helloworld/build_from_git.sh	/^build_and_test()$/;"	f
+build_noargs	helloworld/build.sh	/^build_noargs()$/;"	f
+build_noargs	helloworld/build_from_git.sh	/^build_noargs()$/;"	f
+build_with_args	helloworld/build.sh	/^build_with_args()$/;"	f
+build_with_args	helloworld/build_from_git.sh	/^build_with_args()$/;"	f
+foo#auto#hello	vim/vim_pack_test/foo/opt/fooopt/autoload/foo/auto.vim	/^function foo#auto#hello()$/;"	f
+g:fooopt_loaded	vim/vim_pack_test/foo/opt/fooopt/plugin/opt.vim	/^let g:fooopt_loaded = 1$/;"	v
+other#auto#hello	vim/vim_pack_test/foo/opt/fooother/autoload/other/auto.vim	/^function other#auto#hello()$/;"	f
