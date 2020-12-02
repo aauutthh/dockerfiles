@@ -51,11 +51,11 @@ RUN set -ex \
     && make \
     && make install
 
-COPY nginx_example.conf /data/openresty/workspace/conf/nginx.conf
-
 RUN set -ex \
     && cd $OPENRESTY_HOME/bin; ln -sf ../nginx/sbin/nginx openresty;
 
+COPY nginx_example.conf /data/openresty/workspace/conf/nginx.conf
+COPY docker-entrypoin.sh /
 
 EXPOSE 8080
-CMD [ "/opt/openresty/bin/openresty", "-p", "/data/openresty/workspace", "-g", "daemon off;" ]
+ENTRYPOINT [ "sh", "/docker-entrypoin.sh" ]
