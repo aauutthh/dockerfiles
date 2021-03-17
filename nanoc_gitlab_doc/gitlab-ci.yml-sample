@@ -1,0 +1,16 @@
+image: docker-hub.server.com/daniel/nanoc-markdown:4.12.0
+pages:
+  stage: deploy
+  script:
+    - mkdir -p output
+    - bundle exec nanoc
+    - mv output public
+    # gitlab-ci 部署pages时必须输出public目录
+
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+  tags:
+    - ci
